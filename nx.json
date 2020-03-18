@@ -1,0 +1,22 @@
+{
+  "npmScope": "cypress-headless",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "example": {
+      "tags": []
+    },
+    "example-e2e": {
+      "tags": [],
+      "implicitDependencies": ["example"]
+    }
+  }
+}
